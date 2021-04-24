@@ -1,0 +1,11 @@
+alias myconfig="sudo cp -Rfv ~/DATA/config/{termite,glava,arcologout,neofetch,polybar,openbox,rofi,spicetify,plank,xfce4,ranger} ~/.config"
+alias reloadbash="sudo cp -Rfv ~/DATA/config/.bashrc ~/.bashrc"
+alias ku="/home/niel/DATA/config/hue.sh"
+alias micon="pactl load-module module-loopback latency_msec=1"
+alias micoff="pactl unload-module module-loopback"
+alias oras="sudo timedatectl set-ntp on && ~/.config/polybar/./launch.sh"
+alias seed='ssh arcolinux@bike.seedhost.eu'
+alias downgrada="downgrade --ala-url 'https://bike.seedhost.eu/arcolinux/'"
+# install powerpill and paru-bin
+alias pu="sudo pacman -Sy && sudo powerpill -Su && paru -Su"
+
