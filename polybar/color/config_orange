@@ -14,6 +14,8 @@ magenta    = #B48EAD
 ;orange    = #8FBCBB
 white      = #D8DEE9
 orange     = #D08770
+rose       = #f07da3
+
 
 ; ========================================================================================
 ; mainbar-openbox
@@ -431,7 +433,7 @@ type = internal/network
 interface = eno1
 label-connected = %upspeed:7% Up
 format-connected = <label-connected>
-#format-connected-prefix = ""
+format-connected-prefix = ""
 #format-connected-prefix-foreground = #FE522C
 format-connected-foreground = ${colors.black}
 format-connected-background = ${colors.orange}
@@ -448,7 +450,7 @@ type = internal/network
 interface = eno1
 label-connected = %downspeed:7% Down
 format-connected = <label-connected>
-#format-connected-prefix = ""
+format-connected-prefix = ""
 #format-connected-prefix-foreground = #3EC13F
 format-connected-foreground = ${colors.black}
 format-connected-background = ${colors.orange}

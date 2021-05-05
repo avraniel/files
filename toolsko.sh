@@ -39,6 +39,7 @@ yay -S oh-my-bash-git --noconfirm --needed
 yay -S ttf-fira-code --noconfirm --needed
 #yay -S arcolinux-logout-themes-git --noconfirm --needed
 yay -S audio-recorder --noconfirm --needed
+yay -S openbox-patched --noconfirm --needed
 
 
 
@@ -53,6 +54,7 @@ cp -Rfv ~/DATA/config/.bashrc ~/.bashrc
 cp -Rfv ~/DATA/config/.xinitrc ~/
 cp -Rfv ~/DATA/config/nitrogen ~/.config
 sh install-sardi-extra-icons-v3.sh
+mv ~/DATA/config/openbox/rc.xml_rounded corner ~/.config/openbox/rc.xml
 spotify
 sh spicetify.sh
 sh setup-git.sh

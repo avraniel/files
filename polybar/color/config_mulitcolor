@@ -7,13 +7,15 @@ foreground = ${xrdb:color7:#222}
 alert      = #bd2c40
 black      = #4C566A
 red        = #ff0000
-;green      = #A3BE8C
+green      = #A3BE8C
 yellow     = #EBCB8B
 blue       = #5E81AC
 magenta    = #B48EAD
-green       = #8FBCBB
+cyan       = #8FBCBB
 white      = #D8DEE9
 orange     = #D08770
+rose       = #f07da3
+
 
 ; ========================================================================================
 ; mainbar-openbox
@@ -66,7 +68,7 @@ font-5 = Noto Sans Mono:size=12;0
 
 ; Modlues
 modules-left   = ra5 ewmh xwindow 
-modules-center = la4 la3 la4 la3 la1 weather la3 la2b time ra2b ra3 date ra1 ra3 ra4 ra3 ra4
+modules-center = la4 la3 la4 la3 la11 weather la31 la2b time ra2b ra3111 date ra11111 ra3 ra4 ra3 ra4
 modules-right  =  
 
 ; Cursor actions
@@ -146,9 +148,9 @@ font-4 = Noto Sans:size=12;0
 font-5 = Noto Sans Mono:size=12;0
 
 ; Modlues
-modules-left   = ra5 ra3  cpu2  ra1 ra3  temperature ra1 ra3 networkspeedup ra1 ra3  networkspeeddown ra1 ra3 ra4 ra3 ra4
-modules-center = la4 la3 la4 la3 la1 kernel la3 la2b release ra2b ra3 memory2 ra1 ra3 ra4 ra3 ra4
-modules-right  = la4 la3 la4 la3 la1 gpu la3 la4 la3 la4 uptime la3 la4 la3 la1b  powermenu la6 la4b 
+modules-left   = ra5 ra31  cpu2  ra11 ra32  temperature ra111 ra3rose networkspeedup ra1rose ra311  networkspeeddown ra1111 ra3 ra4 ra3 ra4
+modules-center = la4 la3 la4 la3 la11 kernel la31 la2b release ra2b ra3111 memory2 ra11111 ra3 ra4 ra3 ra4
+modules-right  = la4 la3 la4 la3 la111 gpu la3111 la4 la3 la41 uptime la311 la4 la3 la1b1  powermenu la61 la4b 
 
 
 border-size = 1
@@ -231,7 +233,7 @@ interval = 100
 label = Uptime : %output%
 
 format-foreground = ${colors.black}
-format-background = ${colors.cyan}
+format-background = ${colors.yellow}
 ;format-prefix = " "
 ;format-prefix-foreground = #C15D3E
 ;format-underline = #C15D3E
@@ -252,7 +254,7 @@ date = %A, %d %B %Y
 ; Label
 label            = %date%
 label-foreground = ${colors.black}
-label-background = ${colors.cyan}
+label-background = ${colors.white}
 label-padding    = 2
 
 [module/temperature2]
@@ -261,7 +263,7 @@ exec = ~/.config/polybar/scripts/tempcores.sh
 interval = 2
 format-padding = 1
 format-foreground = ${colors.black}
-format-background = ${colors.cyan}
+format-background = ${colors.green}
 #format-underline = #C1B93E
 #format-prefix-foreground = #C1B93E
 label =  %output:0:150:%
@@ -314,7 +316,7 @@ format-warn = <ramp> <label-warn>
 ;   %temperature-f%   (temperature in °F)
 label = Temp %temperature-c%
 label-foreground = ${colors.black}
-label-background = ${colors.cyan}
+label-background = ${colors.yellow}
 
 ; Available tokens:
 ;   %temperature% (deprecated)
@@ -331,7 +333,7 @@ ramp-0 = A
 ramp-1 = B
 ramp-2 = C
 ramp-foreground = ${colors.black}
-ramp-background = ${colors.cyan}
+ramp-background = ${colors.yellow}
 
 
 [module/gpu]
@@ -382,7 +384,7 @@ format-warn = <ramp> <label-warn>
 ;   %temperature-f%   (temperature in °F)
 label = Gpu %temperature-c% 
 label-foreground = ${colors.black}
-label-background = ${colors.cyan}
+label-background = ${colors.magenta}
 
 ; Available tokens:
 ;   %temperature% (deprecated)
@@ -399,7 +401,7 @@ ramp-0 = A
 ramp-1 = B
 ramp-2 = C
 ramp-foreground = ${colors.black}
-ramp-background = ${colors.cyan}
+ramp-background = ${colors.magenta}
 
 
 
@@ -419,7 +421,7 @@ interval = 10
 ; Label
 label            = %output%
 label-foreground = ${colors.black}
-label-background = ${colors.cyan}
+label-background = ${colors.white}
 label-padding    = 2
 
 [module/networkspeedup]
@@ -429,12 +431,12 @@ type = internal/network
 ;interface = enp14s0
 ;interface = enp0s31f6
 interface = eno1
-label-connected = %upspeed:7% Up
+label-connected = %upspeed:7% 
 format-connected = <label-connected>
-#format-connected-prefix = ""
+format-connected-prefix = ""
 #format-connected-prefix-foreground = #FE522C
 format-connected-foreground = ${colors.black}
-format-connected-background = ${colors.cyan}
+format-connected-background = ${colors.rose}
 ;format-connected-underline = #62FF00
 
 ################################################################################
@@ -446,12 +448,12 @@ type = internal/network
 ;interface = enp14s0
 ;interface = enp0s31f6
 interface = eno1
-label-connected = %downspeed:7% Down
+label-connected = %downspeed:7% 
 format-connected = <label-connected>
-#format-connected-prefix = ""
+format-connected-prefix = ""
 #format-connected-prefix-foreground = #3EC13F
 format-connected-foreground = ${colors.black}
-format-connected-background = ${colors.cyan}
+format-connected-background = ${colors.blue}
 ;format-connected-underline = #62FF00
 
 ; ============
@@ -463,13 +465,13 @@ type = internal/pulseaudio
 ; Volume label
 label-volume            = Volume: %percentage%%
 label-volume-foreground = ${colors.black}
-label-volume-background = ${colors.cyan}
+label-volume-background = ${colors.green}
 label-volume-padding    = 2
 
 ; Muted label
 label-muted            = Muted
 label-muted-foreground = ${colors.black}
-label-muted-background = ${colors.cyan}
+label-muted-background = ${colors.green}
 label-muted-padding    = 2
 
 
@@ -477,7 +479,7 @@ label-muted-padding    = 2
 type = custom/text
 content = power
 content-foreground = ${colors.black}
-content-background = ${colors.green}
+content-background = ${colors.orange}
 content-padding    = 2
 click-left = $HOME/.config/polybar/scripts/sysmenu
 click-right = $HOME/.config/polybar/scripts/sysmenu
@@ -513,7 +515,7 @@ tail = false
 interval = 1024
 
 label-foreground = ${colors.black}
-label-background = ${colors.cyan}
+label-background = ${colors.white}
 label-padding    = 2
 
 
@@ -540,7 +542,7 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
 label-foreground = ${colors.black}
-label-background = ${colors.cyan}
+label-background = ${colors.white}
 label-padding    = 2
 
 
@@ -551,7 +553,7 @@ type = internal/cpu
 ; Default: 1
 interval = 1
 format-foreground = ${colors.black}
-format-background = ${colors.cyan}
+format-background = ${colors.orange}
 ;format-prefix = "  "
 ;format-prefix-foreground = #cd1f3f
 ;format-underline = #cd1f3f
@@ -610,7 +612,23 @@ type = custom/text
 
 ; Label
 content            = %{T2}%{T-}
-content-foreground = ${colors.cyan}
+content-foreground = ${colors.green}
+content-background = ${colors.background}
+
+[module/la111]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.magenta}
+content-background = ${colors.background}
+
+[module/la11]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.white}
 content-background = ${colors.background}
 
 [module/la1b]
@@ -618,8 +636,16 @@ type = custom/text
 
 ; Label
 content            = %{T2}%{T-}
-content-foreground = ${colors.blue}
-content-background = ${colors.green}
+content-foreground = ${colors.green}
+content-background = ${colors.background}
+
+[module/la1b1]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.orange}
+content-background = ${colors.background}
 
 [module/la2]
 type = custom/text
@@ -645,14 +671,46 @@ type = custom/text
 ; Label
 content            = %{T2}%{T-}
 content-foreground = ${colors.background}
-content-background = ${colors.cyan}
+content-background = ${colors.green}
+
+[module/la3111]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.background}
+content-background = ${colors.magenta}
+
+[module/la311]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.background}
+content-background = ${colors.yellow}
+
+[module/la31]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.background}
+content-background = ${colors.white}
 
 [module/la4]
 type = custom/text
 
 ; Label
 content            = %{T2}%{T-}
-content-foreground = ${colors.cyan}
+content-foreground = ${colors.green}
+content-background = ${colors.background}
+
+[module/la41]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.yellow}
 content-background = ${colors.background}
 
 [module/la4b]
@@ -680,12 +738,61 @@ content            = %{T2}%{T-}
 content-foreground = ${colors.background}
 content-background = ${colors.green}
 
+[module/la61]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.background}
+content-background = ${colors.orange}
+
 [module/ra1]
 type = custom/text
 
 ; Label
 content            = %{T2}%{T-}
-content-foreground = ${colors.cyan}
+content-foreground = ${colors.green}
+content-background = ${colors.background}
+
+[module/ra1rose]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.rose}
+content-background = ${colors.background}
+
+[module/ra11111]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.white}
+content-background = ${colors.background}
+
+
+[module/ra1111]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.blue}
+content-background = ${colors.background}
+
+[module/ra111]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.yellow}
+content-background = ${colors.background}
+
+[module/ra11]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.orange}
 content-background = ${colors.background}
 
 [module/ra2]
@@ -710,14 +817,55 @@ type = custom/text
 ; Label
 content            = %{T2}%{T-}
 content-foreground = ${colors.background}
-content-background = ${colors.cyan}
+content-background = ${colors.green}
+
+[module/ra3rose]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.background}
+content-background = ${colors.rose}
+
+[module/ra3111]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.background}
+content-background = ${colors.white}
+
+[module/ra32]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.background}
+content-background = ${colors.yellow}
+
+
+[module/ra31]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.background}
+content-background = ${colors.orange}
+
+[module/ra311]
+type = custom/text
+
+; Label
+content            = %{T2}%{T-}
+content-foreground = ${colors.background}
+content-background = ${colors.blue}
 
 [module/ra4]
 type = custom/text
 
 ; Label
 content            = %{T2}%{T-}
-content-foreground = ${colors.cyan}
+content-foreground = ${colors.green}
 content-background = ${colors.background}
 
 [module/ra5]
