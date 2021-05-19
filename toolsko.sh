@@ -18,29 +18,30 @@ set -e
 
 sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist
 
-yay -Syu --noconfirm
+paru -Syu --noconfirm
 
 
 
-yay -S qtwebflix-git --noconfirm
-yay -S polybar --noconfirm
-yay -S dropbox --noconfirm
+paru -S qtwebflix-git --noconfirm
+paru -S polybar --noconfirm
+paru -S dropbox --noconfirm
 
-yay -S adapta-gtk-theme --noconfirm
+paru -S adapta-gtk-theme --noconfirm
 
-yay -S xcursor-breeze-serie-obsidian --noconfirm
+paru -S xcursor-breeze-serie-obsidian --noconfirm
 
-yay -S faba-icon-theme --noconfirm
-yay -S halo-icons-git --noconfirm
-yay -S zafiro-icon-theme --noconfirm
-yay -S xcursor-simpleandsoft --noconfirm
-yay -S popcorntime-bin --noconfirm
-yay -S oh-my-bash-git --noconfirm --needed
-yay -S ttf-fira-code --noconfirm --needed
-#yay -S arcolinux-logout-themes-git --noconfirm --needed
-yay -S audio-recorder --noconfirm --needed
-yay -S openbox-patched --noconfirm --needed
-
+paru -S faba-icon-theme --noconfirm
+paru -S halo-icons-git --noconfirm
+paru -S zafiro-icon-theme --noconfirm
+paru -S xcursor-simpleandsoft --noconfirm
+paru -S popcorntime-bin --noconfirm
+paru -S oh-my-bash-git --noconfirm --needed
+paru -S ttf-fira-code --noconfirm --needed
+#paru -S arcolinux-logout-themes-git --noconfirm --needed
+paru -S audio-recorder --noconfirm --needed
+paru -S openbox-patched --noconfirm --needed
+paru -S sweet-gtk-theme-dark --noconfirm --needed
+paru -S candy-icons-git --noconfirm --needed
 
 
 cp -Rf ~/DATA/config/{termite,glava,arcologout,neofetch,polybar,plank,xfce4,openbox,rofi,spicetify,ranger} ~/.config

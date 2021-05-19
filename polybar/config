@@ -11,7 +11,7 @@ green      = #A3BE8C
 yellow     = #EBCB8B
 blue       = #5E81AC
 magenta    = #B48EAD
-cyan       = #8FBCBB
+;white       = #8FBCBB
 white      = #D8DEE9
 orange     = #D08770
 
@@ -231,7 +231,7 @@ interval = 100
 label = Uptime : %output%
 
 format-foreground = ${colors.black}
-format-background = ${colors.green}
+format-background = ${colors.white}
 ;format-prefix = " "
 ;format-prefix-foreground = #C15D3E
 ;format-underline = #C15D3E
@@ -252,7 +252,7 @@ date = %A, %d %B %Y
 ; Label
 label            = %date%
 label-foreground = ${colors.black}
-label-background = ${colors.green}
+label-background = ${colors.white}
 label-padding    = 2
 
 [module/temperature2]
@@ -261,7 +261,7 @@ exec = ~/.config/polybar/scripts/tempcores.sh
 interval = 2
 format-padding = 1
 format-foreground = ${colors.black}
-format-background = ${colors.green}
+format-background = ${colors.white}
 #format-underline = #C1B93E
 #format-prefix-foreground = #C1B93E
 label =  %output:0:150:%
@@ -314,7 +314,7 @@ format-warn = <ramp> <label-warn>
 ;   %temperature-f%   (temperature in °F)
 label = Temp %temperature-c%
 label-foreground = ${colors.black}
-label-background = ${colors.green}
+label-background = ${colors.white}
 
 ; Available tokens:
 ;   %temperature% (deprecated)
@@ -331,7 +331,7 @@ ramp-0 = A
 ramp-1 = B
 ramp-2 = C
 ramp-foreground = ${colors.black}
-ramp-background = ${colors.green}
+ramp-background = ${colors.white}
 
 
 [module/gpu]
@@ -382,7 +382,7 @@ format-warn = <ramp> <label-warn>
 ;   %temperature-f%   (temperature in °F)
 label = Gpu %temperature-c% 
 label-foreground = ${colors.black}
-label-background = ${colors.green}
+label-background = ${colors.white}
 
 ; Available tokens:
 ;   %temperature% (deprecated)
@@ -399,7 +399,7 @@ ramp-0 = A
 ramp-1 = B
 ramp-2 = C
 ramp-foreground = ${colors.black}
-ramp-background = ${colors.green}
+ramp-background = ${colors.white}
 
 
 
@@ -419,7 +419,7 @@ interval = 10
 ; Label
 label            = %output%
 label-foreground = ${colors.black}
-label-background = ${colors.green}
+label-background = ${colors.white}
 label-padding    = 2
 
 [module/networkspeedup]
@@ -431,10 +431,10 @@ type = internal/network
 interface = eno1
 label-connected = %upspeed:7% Up
 format-connected = <label-connected>
-#format-connected-prefix = ""
+format-connected-prefix = ""
 #format-connected-prefix-foreground = #FE522C
 format-connected-foreground = ${colors.black}
-format-connected-background = ${colors.green}
+format-connected-background = ${colors.white}
 ;format-connected-underline = #62FF00
 
 ################################################################################
@@ -448,10 +448,10 @@ type = internal/network
 interface = eno1
 label-connected = %downspeed:7% Down
 format-connected = <label-connected>
-#format-connected-prefix = ""
+format-connected-prefix = ""
 #format-connected-prefix-foreground = #3EC13F
 format-connected-foreground = ${colors.black}
-format-connected-background = ${colors.green}
+format-connected-background = ${colors.white}
 ;format-connected-underline = #62FF00
 
 ; ============
@@ -463,13 +463,13 @@ type = internal/pulseaudio
 ; Volume label
 label-volume            = Volume: %percentage%%
 label-volume-foreground = ${colors.black}
-label-volume-background = ${colors.green}
+label-volume-background = ${colors.white}
 label-volume-padding    = 2
 
 ; Muted label
 label-muted            = Muted
 label-muted-foreground = ${colors.black}
-label-muted-background = ${colors.green}
+label-muted-background = ${colors.white}
 label-muted-padding    = 2
 
 
@@ -477,7 +477,7 @@ label-muted-padding    = 2
 type = custom/text
 content = power
 content-foreground = ${colors.black}
-content-background = ${colors.green}
+content-background = ${colors.white}
 content-padding    = 2
 click-left = $HOME/.config/polybar/scripts/sysmenu
 click-right = $HOME/.config/polybar/scripts/sysmenu
@@ -513,7 +513,7 @@ tail = false
 interval = 1024
 
 label-foreground = ${colors.black}
-label-background = ${colors.green}
+label-background = ${colors.white}
 label-padding    = 2
 
 
@@ -540,7 +540,7 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
 label-foreground = ${colors.black}
-label-background = ${colors.green}
+label-background = ${colors.white}
 label-padding    = 2
 
 
@@ -551,7 +551,7 @@ type = internal/cpu
 ; Default: 1
 interval = 1
 format-foreground = ${colors.black}
-format-background = ${colors.green}
+format-background = ${colors.white}
 ;format-prefix = "  "
 ;format-prefix-foreground = #cd1f3f
 ;format-underline = #cd1f3f
@@ -610,7 +610,7 @@ type = custom/text
 
 ; Label
 content            = %{T2}%{T-}
-content-foreground = ${colors.green}
+content-foreground = ${colors.white}
 content-background = ${colors.background}
 
 [module/la1b]
@@ -618,7 +618,7 @@ type = custom/text
 
 ; Label
 content            = %{T2}%{T-}
-content-foreground = ${colors.green}
+content-foreground = ${colors.white}
 content-background = ${colors.background}
 
 [module/la2]
@@ -645,14 +645,14 @@ type = custom/text
 ; Label
 content            = %{T2}%{T-}
 content-foreground = ${colors.background}
-content-background = ${colors.green}
+content-background = ${colors.white}
 
 [module/la4]
 type = custom/text
 
 ; Label
 content            = %{T2}%{T-}
-content-foreground = ${colors.green}
+content-foreground = ${colors.white}
 content-background = ${colors.background}
 
 [module/la4b]
@@ -678,14 +678,14 @@ type = custom/text
 ; Label
 content            = %{T2}%{T-}
 content-foreground = ${colors.background}
-content-background = ${colors.green}
+content-background = ${colors.white}
 
 [module/ra1]
 type = custom/text
 
 ; Label
 content            = %{T2}%{T-}
-content-foreground = ${colors.green}
+content-foreground = ${colors.white}
 content-background = ${colors.background}
 
 [module/ra2]
@@ -710,14 +710,14 @@ type = custom/text
 ; Label
 content            = %{T2}%{T-}
 content-foreground = ${colors.background}
-content-background = ${colors.green}
+content-background = ${colors.white}
 
 [module/ra4]
 type = custom/text
 
 ; Label
 content            = %{T2}%{T-}
-content-foreground = ${colors.green}
+content-foreground = ${colors.white}
 content-background = ${colors.background}
 
 [module/ra5]

@@ -32,7 +32,7 @@ git commit -m "$input"
 
 # Push the local files to github
 
-git push -u origin master
+git push -u origin -f
 
 
 echo "################################################################"
