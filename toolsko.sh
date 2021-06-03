@@ -50,7 +50,7 @@ cp ~/DATA/config/pipes-diagonal ~/.bin
 cp -Rf ~/DATA/config/.cache ~/
 cp ~/DATA/config/.zshrc ~/
 cp ~/DATA/config/.zshrc-personal ~/
-sudo cp -Rfv ~/DATA/config/lightdm.conf /etc/lightdm/lightdm.conf
+#sudo cp -Rfv ~/DATA/config/lightdm.conf /etc/lightdm/lightdm.conf
 cp -Rfv ~/DATA/config/.bashrc ~/.bashrc
 cp -Rfv ~/DATA/config/.xinitrc ~/
 cp -Rfv ~/DATA/config/nitrogen ~/.config

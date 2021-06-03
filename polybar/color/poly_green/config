@@ -7,11 +7,11 @@ foreground = ${xrdb:color7:#222}
 alert      = #bd2c40
 black      = #4C566A
 red        = #ff0000
-green      = #A3BE8C
+green      = #05b05b
 yellow     = #EBCB8B
 blue       = #5E81AC
 magenta    = #B48EAD
-;yellow       = #8FBCBB
+cyan       = #8FBCBB
 white      = #D8DEE9
 orange     = #D08770
 
@@ -230,8 +230,8 @@ exec = uptime | awk -F, '{sub(".*up ",x,$1);print $1}'
 interval = 100
 label = Uptime : %output%
 
-format-foreground = ${colors.black}
-format-background = ${colors.yellow}
+format-foreground = ${colors.white}
+format-background = ${colors.green}
 ;format-prefix = " "
 ;format-prefix-foreground = #C15D3E
 ;format-underline = #C15D3E
@@ -251,8 +251,8 @@ date = %A, %d %B %Y
 
 ; Label
 label            = %date%
-label-foreground = ${colors.black}
-label-background = ${colors.yellow}
+label-foreground = ${colors.white}
+label-background = ${colors.green}
 label-padding    = 2
 
 [module/temperature2]
@@ -260,8 +260,8 @@ type = custom/script
 exec = ~/.config/polybar/scripts/tempcores.sh
 interval = 2
 format-padding = 1
-format-foreground = ${colors.black}
-format-background = ${colors.yellow}
+format-foreground = ${colors.white}
+format-background = ${colors.green}
 #format-underline = #C1B93E
 #format-prefix-foreground = #C1B93E
 label =  %output:0:150:%
@@ -313,8 +313,8 @@ format-warn = <ramp> <label-warn>
 ;   %temperature-c%   (default, temperature in °C)
 ;   %temperature-f%   (temperature in °F)
 label = Temp %temperature-c%
-label-foreground = ${colors.black}
-label-background = ${colors.yellow}
+label-foreground = ${colors.white}
+label-background = ${colors.green}
 
 ; Available tokens:
 ;   %temperature% (deprecated)
@@ -330,8 +330,8 @@ label-warn-foreground = #f00
 ramp-0 = A
 ramp-1 = B
 ramp-2 = C
-ramp-foreground = ${colors.black}
-ramp-background = ${colors.yellow}
+ramp-foreground = ${colors.white}
+ramp-background = ${colors.green}
 
 
 [module/gpu]
@@ -381,8 +381,8 @@ format-warn = <ramp> <label-warn>
 ;   %temperature-c%   (default, temperature in °C)
 ;   %temperature-f%   (temperature in °F)
 label = Gpu %temperature-c% 
-label-foreground = ${colors.black}
-label-background = ${colors.yellow}
+label-foreground = ${colors.white}
+label-background = ${colors.green}
 
 ; Available tokens:
 ;   %temperature% (deprecated)
@@ -398,8 +398,8 @@ label-warn-foreground = #f00
 ramp-0 = A
 ramp-1 = B
 ramp-2 = C
-ramp-foreground = ${colors.black}
-ramp-background = ${colors.yellow}
+ramp-foreground = ${colors.white}
+ramp-background = ${colors.green}
 
 
 
@@ -418,8 +418,8 @@ interval = 10
 
 ; Label
 label            = %output%
-label-foreground = ${colors.black}
-label-background = ${colors.yellow}
+label-foreground = ${colors.white}
+label-background = ${colors.green}
 label-padding    = 2
 
 [module/networkspeedup]
@@ -433,8 +433,8 @@ label-connected = %upspeed:7% Up
 format-connected = <label-connected>
 format-connected-prefix = ""
 #format-connected-prefix-foreground = #FE522C
-format-connected-foreground = ${colors.black}
-format-connected-background = ${colors.yellow}
+format-connected-foreground = ${colors.white}
+format-connected-background = ${colors.green}
 ;format-connected-underline = #62FF00
 
 ################################################################################
@@ -450,8 +450,8 @@ label-connected = %downspeed:7% Down
 format-connected = <label-connected>
 format-connected-prefix = ""
 #format-connected-prefix-foreground = #3EC13F
-format-connected-foreground = ${colors.black}
-format-connected-background = ${colors.yellow}
+format-connected-foreground = ${colors.white}
+format-connected-background = ${colors.green}
 ;format-connected-underline = #62FF00
 
 ; ============
@@ -462,22 +462,22 @@ type = internal/pulseaudio
 
 ; Volume label
 label-volume            = Volume: %percentage%%
-label-volume-foreground = ${colors.black}
-label-volume-background = ${colors.yellow}
+label-volume-foreground = ${colors.white}
+label-volume-background = ${colors.green}
 label-volume-padding    = 2
 
 ; Muted label
 label-muted            = Muted
-label-muted-foreground = ${colors.black}
-label-muted-background = ${colors.yellow}
+label-muted-foreground = ${colors.white}
+label-muted-background = ${colors.green}
 label-muted-padding    = 2
 
 
 [module/powermenu]
 type = custom/text
 content = power
-content-foreground = ${colors.black}
-content-background = ${colors.yellow}
+content-foreground = ${colors.white}
+content-background = ${colors.green}
 content-padding    = 2
 click-left = $HOME/.config/polybar/scripts/sysmenu
 click-right = $HOME/.config/polybar/scripts/sysmenu
@@ -512,8 +512,8 @@ exec = uname -r
 tail = false
 interval = 1024
 
-label-foreground = ${colors.black}
-label-background = ${colors.yellow}
+label-foreground = ${colors.white}
+label-background = ${colors.green}
 label-padding    = 2
 
 
@@ -539,8 +539,8 @@ format = <label>
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
-label-foreground = ${colors.black}
-label-background = ${colors.yellow}
+label-foreground = ${colors.white}
+label-background = ${colors.green}
 label-padding    = 2
 
 
@@ -550,8 +550,8 @@ type = internal/cpu
 ; Seconds to sleep between updates
 ; Default: 1
 interval = 1
-format-foreground = ${colors.black}
-format-background = ${colors.yellow}
+format-foreground = ${colors.white}
+format-background = ${colors.green}
 ;format-prefix = "  "
 ;format-prefix-foreground = #cd1f3f
 ;format-underline = #cd1f3f
@@ -610,7 +610,7 @@ type = custom/text
 
 ; Label
 content            = %{T2}%{T-}
-content-foreground = ${colors.yellow}
+content-foreground = ${colors.green}
 content-background = ${colors.background}
 
 [module/la1b]
@@ -618,7 +618,7 @@ type = custom/text
 
 ; Label
 content            = %{T2}%{T-}
-content-foreground = ${colors.yellow}
+content-foreground = ${colors.green}
 content-background = ${colors.background}
 
 [module/la2]
@@ -645,14 +645,14 @@ type = custom/text
 ; Label
 content            = %{T2}%{T-}
 content-foreground = ${colors.background}
-content-background = ${colors.yellow}
+content-background = ${colors.green}
 
 [module/la4]
 type = custom/text
 
 ; Label
 content            = %{T2}%{T-}
-content-foreground = ${colors.yellow}
+content-foreground = ${colors.green}
 content-background = ${colors.background}
 
 [module/la4b]
@@ -678,14 +678,14 @@ type = custom/text
 ; Label
 content            = %{T2}%{T-}
 content-foreground = ${colors.background}
-content-background = ${colors.yellow}
+content-background = ${colors.green}
 
 [module/ra1]
 type = custom/text
 
 ; Label
 content            = %{T2}%{T-}
-content-foreground = ${colors.yellow}
+content-foreground = ${colors.green}
 content-background = ${colors.background}
 
 [module/ra2]
@@ -710,14 +710,14 @@ type = custom/text
 ; Label
 content            = %{T2}%{T-}
 content-foreground = ${colors.background}
-content-background = ${colors.yellow}
+content-background = ${colors.green}
 
 [module/ra4]
 type = custom/text
 
 ; Label
 content            = %{T2}%{T-}
-content-foreground = ${colors.yellow}
+content-foreground = ${colors.green}
 content-background = ${colors.background}
 
 [module/ra5]

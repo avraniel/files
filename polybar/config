@@ -11,8 +11,8 @@ green      = #A3BE8C
 yellow     = #EBCB8B
 blue       = #5E81AC
 magenta    = #B48EAD
-;white       = #8FBCBB
-white      = #D8DEE9
+cyan       = #8FBCBB
+white      = #ffffff
 orange     = #D08770
 
 ; ========================================================================================
