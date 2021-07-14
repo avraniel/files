@@ -123,6 +123,7 @@ alias kc='killall conky'
 alias hw="hwinfo --short"
 
 #skip integrity check
+alias paruskip='paru -S --mflags --skipinteg'
 alias yayskip='yay -S --mflags --skipinteg'
 alias trizenskip='trizen -S --skipinteg'
 
@@ -210,6 +211,7 @@ alias downgrada="sudo downgrade --ala-url https://bike.seedhost.eu/arcolinux/"
 
 #systeminfo
 alias probe="sudo -E hw-probe -all -upload"
+alias sysfailed="systemctl list-units --failed"
 
 #shutdown or reboot
 alias ssn="sudo shutdown now"
@@ -255,7 +257,7 @@ ex ()
 
 # reporting tools - install when not installed
 # install neofetch
-neofetch
+#neofetch
 # install screenfetch
 #screenfetch
 # install ufetch-git
