@@ -58,7 +58,7 @@
       <property name="override" type="bool" value="true"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;w" type="string" value="arcolinux-welcome-app"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;m" type="string" value="xfce4-settings-manager"/>
-      <property name="&lt;Primary&gt;&lt;Shift&gt;Print" type="string" value="gnome-screenshot -i"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter -r"/>
       <property name="Print" type="string" value="xfce4-screenshooter -f"/>
       <property name="&lt;Primary&gt;Print" type="string" value="xfce4-screenshooter"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="dmenu_run -i -nb &apos;#191919&apos; -nf &apos;#fea63c&apos; -sb &apos;#fea63c&apos; -sf &apos;#191919&apos; -fn &apos;NotoMonoRegular:bold:pixelsize=14&apos;"/>
@@ -68,7 +68,6 @@
       <property name="&lt;Super&gt;v" type="string" value="pavucontrol"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;u" type="string" value="pavucontrol"/>
       <property name="&lt;Super&gt;Escape" type="string" value="xkill"/>
-      <property name="&lt;Super&gt;Return" type="string" value="alacritty"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;Return" type="string" value="thunar"/>
       <property name="&lt;Super&gt;F1" type="string" value="exo-open --launch webbrowser"/>
       <property name="&lt;Super&gt;F2" type="string" value="atom"/>
@@ -91,7 +90,6 @@
       <property name="XF86AudioStop" type="string" value="playerctl pause"/>
       <property name="XF86AudioPrev" type="string" value="playerctl previous"/>
       <property name="XF86AudioNext" type="string" value="playerctl next"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;Return" type="string" value="alacritty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;r" type="string" value="rofi-theme-selector"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;p" type="string" value="pamac-manager"/>
       <property name="&lt;Super&gt;c" type="string" value="conky-toggle"/>
@@ -114,6 +112,10 @@
       <property name="&lt;Alt&gt;Down" type="string" value="variety --resume"/>
       <property name="&lt;Super&gt;F12" type="string" value="rofi -show drun -fullscreen"/>
       <property name="&lt;Super&gt;F11" type="string" value="rofi -show drun"/>
+      <property name="&lt;Super&gt;space" type="string" value="dmenu_run -i -nb &apos;#191919&apos; -nf &apos;#fea63c&apos; -sb &apos;#fea63c&apos; -sf &apos;#191919&apos; -fn &apos;NotoMonoRegular:bold:pixelsize=14&apos;"/>
+      <property name="&lt;Primary&gt;&lt;Super&gt;Alt_L" type="string" value="flameshot gui"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;Return" type="string" value="termite"/>
+      <property name="&lt;Super&gt;Return" type="string" value="termite"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="termite"/>
     </property>
   </property>

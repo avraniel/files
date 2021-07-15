@@ -17,7 +17,6 @@ view-as-icons=false
 default-category=0
 recent-items-max=10
 favorites-in-recent=true
-display-recent-default=false
 position-search-alternate=true
 position-commands-alternate=true
 position-categories-alternate=true
@@ -79,3 +78,4 @@ name=Open URI
 pattern=^(file|http|https):\\/\\/(.*)$
 command=exo-open \\0
 regex=true
+
