@@ -408,7 +408,7 @@
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <command>termite</command>
+        <command>urxvt</command>
       </action>
     </keybind>
     <keybind key="W-c">
