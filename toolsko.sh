@@ -42,7 +42,7 @@ paru -S audio-recorder --noconfirm --needed
 paru -S openbox-patched --noconfirm --needed
 paru -S sweet-gtk-theme-dark --noconfirm --needed
 paru -S candy-icons-git --noconfirm --needed
-
+paru -S arcolinux-candy-beauty-git --noconfirm --needed
 
 cp -Rf ~/DATA/config/{termite,glava,arcologout,neofetch,polybar,plank,xfce4,openbox,rofi,spicetify,ranger} ~/.config
 cp ~/DATA/config/.bashrc-personal ~/.bashrc-personal
