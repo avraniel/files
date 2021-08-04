@@ -24,7 +24,7 @@ paru -Syu --noconfirm
 
 paru -S qtwebflix-git --noconfirm
 paru -S polybar --noconfirm
-paru -S dropbox --noconfirm
+#paru -S dropbox --noconfirm
 
 paru -S adapta-gtk-theme --noconfirm
 
