@@ -117,6 +117,7 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;Return" type="string" value="termite"/>
       <property name="&lt;Super&gt;Return" type="string" value="termite"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="termite"/>
+      <property name="&lt;Super&gt;b" type="string" value="bitwarden"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
