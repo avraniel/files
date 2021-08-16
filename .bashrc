@@ -64,6 +64,9 @@ alias rmpacmanlock="sudo rm /var/lib/pacman/db.lck"
 #arcolinux logout unlock
 alias rmlogoutlock="sudo rm /tmp/arcologout.lock"
 
+#which graphical card is working
+alias whichvga="/usr/local/bin/arcolinux-which-vga"
+
 #free
 alias free="free -mt"
 
@@ -186,10 +189,12 @@ alias ngrub="sudo $EDITOR /etc/default/grub"
 alias nconfgrub="sudo $EDITOR /boot/grub/grub.cfg"
 alias nmkinitcpio="sudo $EDITOR /etc/mkinitcpio.conf"
 alias nmirrorlist="sudo $EDITOR /etc/pacman.d/mirrorlist"
+alias narcomirrorlist='sudo nano /etc/pacman.d/arcolinux-mirrorlist'
 alias nsddm="sudo $EDITOR /etc/sddm.conf"
 alias nfstab="sudo $EDITOR /etc/fstab"
 alias nnsswitch="sudo $EDITOR /etc/nsswitch.conf"
 alias nsamba="sudo $EDITOR /etc/samba/smb.conf"
+alias ngnupgconf="sudo nano /etc/pacman.d/gnupg/gpg.conf"
 alias nb="$EDITOR ~/.bashrc"
 alias nz="$EDITOR ~/.zshrc"
 
@@ -200,7 +205,7 @@ alias fix-gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
 #receive the key of a developer
 alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 alias fix-gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
-alias fix-key="[ -d ~/.gnupg ] || mkdir ~/.gnupg ; cp /etc/pacman.d/gnupg/gpg.conf ~/.gnupg/ ; echo 'done'"
+alias fix-keyserver="[ -d ~/.gnupg ] || mkdir ~/.gnupg ; cp /etc/pacman.d/gnupg/gpg.conf ~/.gnupg/ ; echo 'done'"
 
 #fixes
 alias fix-permissions="sudo chown -R $USER:$USER ~/.config ~/.local"
@@ -267,7 +272,7 @@ alias awa="arcolinux-welcome-app"
 alias rmgitcache="rm -r ~/.cache/git"
 
 #moving your personal files and folders from /personal to ~
-alias personal='cp -Rf /personal/* ~'
+alias personal='sudo cp -Rf /personal/* ~'
 
 #create a file called .bashrc-personal and put all your personal aliases
 #in there. They will not be overwritten by skel.
@@ -276,7 +281,7 @@ alias personal='cp -Rf /personal/* ~'
 
 # reporting tools - install when not installed
 # install neofetch
-#neofetch
+neofetch
 # install screenfetch
 #screenfetch
 # install ufetch-git
@@ -291,4 +296,3 @@ alias personal='cp -Rf /personal/* ~'
 #hfetch
 # install lolcat
 #sfetch | lolcat
-
