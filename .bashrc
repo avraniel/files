@@ -70,9 +70,6 @@ alias whichvga="/usr/local/bin/arcolinux-which-vga"
 #free
 alias free="free -mt"
 
-#use all cores
-alias uac="sh ~/.bin/main/000*"
-
 #continue download
 alias wget="wget -c"
 
@@ -141,6 +138,7 @@ alias mirrora="sudo reflector --latest 30 --number 10 --sort age --save /etc/pac
 #our experimental - best option for the moment
 alias mirrorx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 5 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
 alias mirrorxx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 20 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
+alias ram='rate-arch-mirrors'
 
 #mounting the folder Public for exchange between host and guest on virtualbox
 alias vbm="sudo /usr/local/bin/arcolinux-vbox-share"
@@ -287,19 +285,16 @@ alias personal='sudo cp -Rf /personal/* ~'
 [[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
 
 # reporting tools - install when not installed
-# install neofetch
 neofetch
-# install screenfetch
 #screenfetch
-# install ufetch-git
-#ufetch
-# install ufetch-arco-git
-#ufetch-arco
-# install arcolinux-paleofetch-git
-#paleofetch
-# install alsi
 #alsi
-# install arcolinux-bin-git - standard on ArcoLinux isos (or sfetch - smaller)
+#paleofetch
+#fetch
 #hfetch
-# install lolcat
-#sfetch | lolcat
+#sfetch
+#ufetch
+#ufetch-arco
+#pfetch
+#sysinfo
+#sysinfo-retro
+#cpufetch
