@@ -220,6 +220,10 @@ alias fix-pacman-keyserver="/usr/local/bin/arcolinux-fix-pacman-gpg-conf"
 alias big="expac -H M '%m\t%n' | sort -h | nl"
 alias downgrada="sudo downgrade --ala-url https://ant.seedhost.eu/arcolinux/"
 
+#hblock (stop tracking with hblock)
+#use unhblock to stop using hblock
+alias unhblock="hblock -S none -D none"
+
 #systeminfo
 alias probe="sudo -E hw-probe -all -upload"
 alias sysfailed="systemctl list-units --failed"
@@ -277,7 +281,7 @@ alias awa="arcolinux-welcome-app"
 alias rmgitcache="rm -r ~/.cache/git"
 
 #moving your personal files and folders from /personal to ~
-alias personal='sudo cp -Rf /personal/* ~'
+alias personal='cp -Rf /personal/* ~'
 
 #create a file called .bashrc-personal and put all your personal aliases
 #in there. They will not be overwritten by skel.
